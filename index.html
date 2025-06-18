@@ -1,40 +1,93 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Сложно сосредоточиться</title>
     <script src="./scripts/script.js"></script>
-  </head>
-  <body class="page">
-    <header class="header decorated-zone">
-      <nav class="header__theme-menu">
+    <script src="scripts/insert-content.js" defer></script>
+    <link rel="stylesheet" href="./styles/globals.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/dark.css">
+    <link rel="stylesheet" href="./styles/light.css">
+</head>
+<body class="page">
+<header class="header decorated-zone">
+    <div class="header__decoration decoration">
+        <div class="header__decoration-borders decoration-borders">
+            <div class="header__border border end-start-border"></div>
+            <div class="header__border border start-end-border"></div>
+        </div>
+        <div class="header__decoration-rec-wrapper">
+            <div class="header__rec-text">REC</div>
+            <div class="header__rec-circle"></div>
+        </div>
+    </div>
+    <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_light"
-            >
-              День
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
-              disabled
-            >
-              Авто
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_dark"
-            >
-              Неон
-            </button>
-          </li>
+            <li class="header__theme-menu-item">
+                <button class="header__theme-menu-button header__theme-menu-button_type_light">День</button>
+            </li>
+            <li class="header__theme-menu-item">
+                <button class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
+                        disabled>Авто
+                </button>
+            </li>
+            <li class="header__theme-menu-item">
+                <button class="header__theme-menu-button header__theme-menu-button_type_dark">Неон</button>
+            </li>
         </ul>
-      </nav>
-    </header>
-  </body>
+    </nav>
+    <h1 class="header__title title">no focus</h1>
+    <h2 class="header__subtitle">Что делать, когда не можешь делать ничего
+        <br>Или почему нам так сложно сконцентрироваться, особенно когда очень надо</h2>
+</header>
+<main>
+    <div class="template-holder"></div>
+    <template id="group-template">
+        <section class="group">
+            <h2 class="group__title"></h2>
+            <div class="group__entries">
+                <p class="group__subtitle"></p>
+                <div class="group__entry">
+                    <h3 class="group__entry-title"></h3>
+                    <p class="group__entry-text"></p>
+                </div>
+            </div>
+        </section>
+    </template>
+    <section class="gallery">
+        <h2 class="group__subtitle subtitle">А можно в картинках?</h2>
+        <div class="images">
+            <figure class="gallery__item">
+                <img src="./images/sunset.png" alt="закат" class="gallery__image" loading="lazy">
+            </figure>
+            <figure class="gallery__item">
+                <img src="./images/ice-cream.png" alt="мороженое" class="gallery__image" loading="lazy">
+            </figure>
+            <figure class="gallery__item">
+                <img src="./images/tape.png" alt="кассета" class="gallery__image" loading="lazy">
+            </figure>
+            <figure class="gallery__item">
+                <img src="./images/books.png" alt="книги" class="gallery__image" loading="lazy">
+            </figure>
+            <figure class="gallery__item">
+                <img src="./images/street.png" alt="улица" class="gallery__image" loading="lazy">
+            </figure>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="footer__decoration decoration">
+        <div class="footer__decoration-borders decoration-borders">
+            <div class="header__border border end-start-border"></div>
+            <div class="header__border border start-end-border"></div>
+        </div>
+    </div>
+    <h1 class="footer__title title">focus</h1>
+</footer>
+</body>
 </html>

@@ -9,8 +9,15 @@
 body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
-  margin: 0 auto;
+  margin: 0;
+  place-self: center;
+  max-width: 1024px;
+  min-width: 375px;
 }
+
+/** {*/
+/*  border: 1px solid red;*/
+/*}*/
 
 h1,
 h2,

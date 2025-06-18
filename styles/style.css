@@ -1,5 +1,185 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+.header {
+    position: relative;
+    background-color: var(--bg-color);
+    background-image: var(--background-image);
+    background-size: cover;
+    background-position: center;
+}
+
+.decoration {
+    pointer-events: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    inset: 0;
+}
+
+.decoration-borders {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.border {
+    width: 25px;
+    aspect-ratio: 1;
+}
+
+.end-start-border {
+    border-width: 1px 1px 0 0;
+    border-style: solid;
+    border-color: var(--border-color);
+    margin-left: auto;
+}
+
+.start-end-border {
+    border-width: 0 0 1px 1px;
+    border-style: solid;
+    border-color: var(--border-color);
+    margin-right: auto;
+}
+
+.header__decoration-rec-wrapper {
+    position: absolute;
+    padding-right: 9px;
+    display: var(--record-display);
+    gap: 10px;
+    align-items: center;
+    color: rgb(var(--decoration-color));
+}
+
+.header__rec-text {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+
+.header__rec-circle {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: rgb(var(--decoration-color));
+    box-shadow: 0 0 4px 2px rgb(var(--decoration-color));
+}
+
+.title {
+    color: var(--title-color);
+    text-shadow: 4px 4px var(--shadows-color);
+    line-height: 83%;
+    letter-spacing: 0;
+}
+
+.header__subtitle {
+    background-color: var(--text-bg-color);
+}
+
+main {
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.group__title {
+    color: var(--title-group-color);
+    margin-block-end: 20px;
+}
+
+.group__entry-title,
+.group__subtitle {
+    color: var(--entry-title-color);
+    background-color: var(--text-bg-color);
+    margin-block-end: 10px;
+}
+
+.group__entry-title,
+.group__entry-text {
+    font-weight: 400;
+}
+
+h2,
+h3,
+.group__subtitle,
+.group__entry-text {
+    font-size: 18px;
+    line-height: 1.4625rem;
+    letter-spacing: 0;
+}
+
+.group__entry-text {
+    font-family: 'IBM Plex mono', sans-serif;
+    color: var(--text-color);
+    margin-block-end: 20px;
+}
+
+.group__title,
+.group__subtitle {
+    font-weight: 700;
+}
+
+.group__subtitle {
+    margin-block-end: 20px;
+}
+
+.subtitle {
+    margin-block-end: 10px;
+}
+
+.gallery__item {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    background-color: var(--bg-color);
+    position: relative;
+}
+
+figure img {
+    display: block;
+    min-width: 100%;
+}
+
+a {
+    text-shadow: 2px 2px var(--shadows-color);
+    text-decoration: none;
+    position: relative;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    width: 0;
+    height: 1px;
+    background: currentColor;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+a:focus {
+    border: 1px solid currentColor;
+}
+
+.header__theme-menu-button:hover {
+    border: 1px solid rgba(var(--decoration-color), 0.5);
+}
+
+.header__theme-menu-button:focus {
+    box-shadow: 0 1px 0 0 rgba(var(--decoration-color));
+}
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  font-family: 'IBM Plex mono', sans-serif;
 }
