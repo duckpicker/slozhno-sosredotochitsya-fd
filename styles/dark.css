@@ -1,4 +1,5 @@
 :root.theme-dark {
+    color-scheme: dark;
     --bg-color: #000028;
     --text-bg-color: #FF0070;
     --text-color: #F1B2CE;

@@ -102,10 +102,6 @@
         right: 20px;
     }
 
-    .header__title {
-        font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    }
-
     .header__theme-menu {
         margin-block-start: 171px;
         margin-block-end: 166px;
@@ -114,6 +110,7 @@
     .header__title {
         margin-left: -20px;
         margin-block-end: 161px;
+        font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     }
 
     .header__subtitle {
