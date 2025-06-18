@@ -73,6 +73,7 @@
 }
 
 .header__subtitle {
+    color: var(--entry-title-color);
     background-color: var(--text-bg-color);
 }
 
@@ -140,6 +141,7 @@ h3,
 }
 
 footer {
+    height: 100vh;
     background-color: var(--bg-color);
     position: relative;
 }

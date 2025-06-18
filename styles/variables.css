@@ -50,7 +50,7 @@
     }
 
     .header__theme-menu-item {
-        padding-block-end: 12px;
+        padding-block-end: 13px;
     }
 
     .header__title {
@@ -66,9 +66,10 @@
         right: 10px;
     }
 
-    .footer__title {
-        padding: 285px 0;
-        place-self: center;
+    footer {
+        display: flex;
+        place-content: center;
+        align-items: center;
     }
 
     .footer__decoration {
@@ -76,7 +77,7 @@
     }
 
     .group {
-        margin-block-end: 50px;
+        margin-block-end: 29px;
     }
 
     .hard-focus {
@@ -107,10 +108,13 @@
         margin-block-end: 166px;
     }
 
+    .title {
+        font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    }
+
     .header__title {
         margin-left: -20px;
         margin-block-end: 161px;
-        font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     }
 
     .header__subtitle {
@@ -130,17 +134,13 @@
     .hard-focus {
         margin-block-start: 40px;
         display: grid;
-        grid-template-columns: min-content 1fr;
+        grid-template-columns: auto 1fr;
         gap: 20px;
-    }
-
-    .reduces-focus {
-        margin-block-end: 80px;
     }
 
     .how-focus {
         display: grid;
-        grid-template-columns: min-content 1fr;
+        grid-template-columns: auto 1fr;
         gap: 20px;
     }
 
@@ -189,11 +189,6 @@
 
     .gallery {
         padding-block-end: 40px;
-    }
-
-    .footer__title {
-        padding: 463px 0;
-        place-self: center;
     }
 
     .footer__decoration {
@@ -249,11 +244,5 @@
 
     .images {
         grid-template-rows: 260px auto 433px;
-    }
-
-    .footer__title {
-        padding: 319px 0;
-        place-self: center;
-        font-size: 157px;
     }
 }
