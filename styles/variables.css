@@ -37,7 +37,7 @@
         text-align: center;
         color: rgb(var(--decoration-color));
         min-width: 70px;
-        min-height: 23px;
+        min-height: 26px;
         font-weight: 400;
     }
 
@@ -50,7 +50,7 @@
     }
 
     .header__theme-menu-item {
-        padding-block-end: 13px;
+        padding-block-end: 10px;
     }
 
     .header__title {
