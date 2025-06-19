@@ -51,9 +51,11 @@
         <section class="group">
             <h2 class="group__title"></h2>
             <div class="group__entries">
-                <p class="group__subtitle"></p>
+                <h3 class="group__subtitle"></h3>
                 <div class="group__entry">
-                    <h4 class="group__entry-title"></h4>
+<!--    в зависимости от наличия подзаголовка .group__subtitle tagName .group__entry-title изменяется с h3 на h4 -->
+<!--    использовал template и js, чтобы сократить дублирование, избежать визуального шума при редактировании и упростить рефакторинг -->
+                    <h3 class="group__entry-title"></h3>
                     <p class="group__entry-text"></p>
                 </div>
             </div>

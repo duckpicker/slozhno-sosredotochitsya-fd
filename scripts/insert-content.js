@@ -84,6 +84,13 @@ data.slice().reverse().forEach(group => {
 
     group.entries.forEach(entry => {
         const entryClone = entryTemplate.cloneNode(true);
+
+        const oldTitle = entryClone.querySelector(".group__entry-title")
+        const newTitle = document.createElement(!!group.subtitle ? "h4" : "h3")
+        newTitle.className = "group__entry-title";
+        newTitle.innerHTML = entry.title;
+        oldTitle.replaceWith(newTitle);
+
         entryClone.querySelector(".group__entry-title").innerHTML = entry.title;
         entryClone.querySelector(".group__entry-text").innerHTML = entry.text;
 
