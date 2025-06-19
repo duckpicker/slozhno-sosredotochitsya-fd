@@ -10,6 +10,6 @@
     --border-color: #FF0070;
     --decoration-color: 255, 0, 112;
 
-    --background-image: url("/images/cover-image-dark.png");
+    --background-image: url("../images/cover-image-dark.png");
     --record-display: flex;
 }
