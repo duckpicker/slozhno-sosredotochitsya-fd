@@ -98,7 +98,10 @@ main {
     margin-block-end: 10px;
 }
 
-.group__entry-title,
+.group__entry-title {
+    font-weight: 700;
+}
+
 .group__entry-text {
     font-weight: 400;
 }
