@@ -102,10 +102,6 @@ main {
     font-weight: 700;
 }
 
-.group__entry-text {
-    font-weight: 400;
-}
-
 h2,
 h3,
 h4,
@@ -120,6 +116,7 @@ h4,
     font-family: 'IBM Plex mono', monospace;
     color: var(--text-color);
     margin-block-end: 20px;
+    font-weight: 400;
 }
 
 .group__title,
