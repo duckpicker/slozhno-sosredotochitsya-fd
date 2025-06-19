@@ -171,15 +171,18 @@ a:hover::after {
     width: 100%;
 }
 
-a:focus {
-    border: 1px solid currentColor;
+a:focus-visible {
+    outline: none;
+    border: none;
+    box-shadow: 0 0 0 1px currentColor;
 }
 
 .header__theme-menu-button:hover {
     border: 1px solid rgba(var(--decoration-color), 0.5);
 }
 
-.header__theme-menu-button:focus {
+.header__theme-menu-button:focus-visible {
+    outline: none;
     box-shadow: 0 1px 0 0 rgba(var(--decoration-color));
 }
 

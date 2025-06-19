@@ -15,7 +15,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-    .theme-auto {
+    :root {
         --bg-color: #FFF1F7;
         --text-bg-color: #FF8DCB;
         --text-color: #353430;
